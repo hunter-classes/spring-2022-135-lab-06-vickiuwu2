@@ -20,6 +20,7 @@ int main()
   std::cout << "------------------------------Tests for task D------------------------------\n\n";
   std::cout << "decryptCaesar(\"Rovvy, Gybvn!\", 10) returns: " << decryptCaesar("Rovvy, Gybvn!", 10) << "\n";
   std::cout << "decryptCaesar(\"123 Jcrra Urtkpi!\", 2) returns: " << decryptCaesar("123 Jcrra Urtkpi!", 2) << "\n\n";
+  
   std::cout << "decryptVigenere(\"Jevpq, Wyvnd!\", \"cake\") returns: " << decryptVigenere("Jevpq, Wyvnd!", "cake") << "\n";
   std::cout << "decryptVigenere(\"K zcgg qcokbu!\", \"cool\") returns: " << decryptVigenere("K zcgg qcokbu!", "cool") << "\n\n";
 

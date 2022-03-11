@@ -8,12 +8,12 @@ TEST_CASE("Tests for shiftChar function")
 {
   CHECK(shiftChar('A', 10) == 'K');
   CHECK(shiftChar('b', 3) == 'e');
-  CHECK(shiftChar('C', 10) == 'H');
+  CHECK(shiftChar('C', 5) == 'H');
 }
 
 TEST_CASE("Tests for encryptCaesar function")
 {
-  CHECK(encryptCaesar("Hello, World!", 10) == "Jevpq, Wyvnd!");
+  CHECK(encryptCaesar("Hello, World!", 10) == "Rovvy, Gybvn!");
   CHECK(encryptCaesar("123 Happy Spring!", 2) == "123 Jcrra Urtkpi!");
 }
 
@@ -26,7 +26,7 @@ TEST_CASE("Tests for encryptVigenere function")
 TEST_CASE("Tests for decryptCaesar function")
 {
   CHECK(decryptCaesar("Rovvy, Gybvn!", 10) == "Hello, World!");
-  CHECK(decryptCaesar("Jcrra Urtkpi!", 2) == "123 Happy Spring!");
+  CHECK(decryptCaesar("123 Jcrra Urtkpi!", 2) == "123 Happy Spring!");
 }
 
 TEST_CASE("Tests for decryptVigenere function")
